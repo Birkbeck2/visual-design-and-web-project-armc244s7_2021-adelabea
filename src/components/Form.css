@@ -1,0 +1,149 @@
+/*  
+Purple: #6713c9
+Pink: #fc3965
+Green: #17e4b9
+Yellow: #f6d60f
+White: #fff
+font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+*/
+
+
+.form-container {
+  margin: 100px auto;
+  width: 60%;
+  position: relative;
+  height: 600px;
+}
+
+.close-btn {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 2%;
+  right: 3%;
+  font-size: 1.5rem;
+  z-index: 1;
+  color: #6713c9;
+  cursor: pointer;
+}
+
+
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.form h1 {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  font-weight: 800;
+  text-align: center;
+  width: 80%;
+  margin-bottom: 1rem;
+  margin-top: 3em;
+  color: #6713c9;
+}
+
+.form-inputs {
+  width: 40%;
+  align-items: center;
+  }
+
+
+.form-inputs p {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 0.5rem;
+  color: #f00e0e;
+}
+
+.form-label {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  display: inline-block;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  color: #6713c9;
+  text-transform: uppercase;  
+}
+
+.form-input {
+  display: block;
+  outline: none;
+  height: 40px;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  border: none;
+
+  font-size: 20px;
+  color: #595959;
+  background-color: rgb(242, 242, 242);
+}
+
+.form-input::placeholder {
+  color: #9e9d9d;
+  background-color: rgb(242, 242, 242);
+  font-size: 20px;
+  padding: 40px;
+  text-align: center;
+
+}
+
+.form-input-btn {
+  width: 20%;
+  background-color: transparent;
+  color:#fc3965;
+  border: 3px solid var(--primary);
+  border-color: #fc3965;
+  padding: 10px;
+  transition: all 0.3s ease-out;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 2em;
+  margin-top: 40px;
+}
+
+.form-input-btn:hover {
+  cursor: pointer;
+  background: #fc3965;
+  color: #fff;
+  transition: all 0.3s ease-out;
+}
+
+.form-input-login {
+  font-size: 0.8rem;
+  margin-top: 10px;
+  color: #6713c9;
+  width: 80%;
+  text-align: center;
+}
+
+.form-input-logup a {
+  text-decoration: none;
+  color: #27cdff;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1000px) {
+ 
+.form-inputs {
+  width: 70%;
+}
+
+.form-input-btn {
+  width: 40%;
+}
+
+}

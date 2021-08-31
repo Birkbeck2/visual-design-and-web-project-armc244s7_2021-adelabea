@@ -1,0 +1,56 @@
+/*  
+Purple: #6713c9
+Pink: #fc3965
+Green: #17e4b9
+Yellow: #f6d60f
+White: #fff
+font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  }
+  
+  .home,
+  .events,
+  .about,
+  .sign-up {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+  }
+
+
+.events {
+  background-image: url('/src/img-1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.about {
+  background-image: url('/src/img-1.jpg');
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.sign-up {
+  background-image: url('/src/img-1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+

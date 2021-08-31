@@ -1,0 +1,70 @@
+/*  
+Purple: #6713c9
+Pink: #fc3965
+Green: #17e4b9
+Yellow: #f6d60f
+White: #fff
+font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+*/
+
+
+:root {
+    --primary: #fff;
+}
+
+
+.btn {
+    padding: 8px 20px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.btn--primary {
+    background-color: var(--primary);
+    color: #270393;
+    border: 1px solid var(--primary);
+}
+
+
+.btn--outline {
+    background-color: transparent;
+    color:#fff;
+    padding: 8px 20px;
+    border: 3px solid var(--primary);
+    transition: all 0.3s ease-out;
+    font-weight: 600;
+}
+
+.btn--outline--2 {
+    background-color: transparent;
+    color:#fc3965;
+    border: 3px solid var(--primary);
+    border-color: #fc3965;
+    padding: 8px 20px;
+    transition: all 0.3s ease-out;
+    font-weight: 600;
+    margin-bottom: 2em;
+}
+
+
+.btn--medium {
+    padding: 8px 30px;
+    font-size: 16px;
+}
+
+
+.btn--large {
+    padding: 12px 20px;
+    font-size: 20px;
+}
+
+
+.btn--large:hover, .btn--medium:hover {
+    background: #fc3965;
+    color: #fff;
+    transition: all 0.3s ease-out;
+    transition: 250ms;
+}

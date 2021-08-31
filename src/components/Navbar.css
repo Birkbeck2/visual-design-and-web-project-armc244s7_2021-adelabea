@@ -1,0 +1,200 @@
+/*  
+Purple: #6713c9
+Pink: #fc3965
+Green: #17e4b9
+Yellow: #f6d60f
+White: #fff
+font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+*/
+
+
+.navbar {
+    background: linear-gradient(90deg, #6713c9 0%, #6713c9 100%);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    max-width: 1300px;
+    font-weight: 600;
+  }
+
+
+  
+  .navbar-logo {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color: #fff;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+  
+
+  .navbar-logo02 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.navbar-logo03 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+
+.navbar-logo:hover {
+    color: #17e4b9;
+}
+
+  .fa-signature {
+    margin-left: 0.5rem;
+    font-size: 2rem;
+  }
+  
+  .nav-menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 60vw;
+    justify-content: end;
+    margin-right: 2rem;
+    font-weight: 600;
+  }
+  
+  .nav-item {
+    height: 90px;
+
+  }
+  
+  .nav-links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    font-weight: 600;
+  }
+  
+  .nav-links:hover {
+    border-bottom: 4px solid #17e4b9;
+    transition: all 0.2s ease-out;
+    color:#17e4b9;
+  }
+  
+  .fa-bars {
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .nav-links-mobile {
+    display: none;
+    font-weight: 600;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .NavbarItems {
+      position: relative;
+    }
+  
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 90vh;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      font-weight: 600;
+    }
+  
+    .nav-menu.active {
+      background: #6713c9;
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+      font-weight: 600;
+    }
+  
+    .nav-links {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+      font-weight: 600;
+      font-size: 2.5em;
+    }
+  
+    .nav-links:hover {
+      background-color: #fff;
+      color: #17e4b9;
+      border-radius: 0;
+    }
+  
+    .navbar-logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(25%, 50%);
+    }
+  
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.5em;
+      cursor: pointer;
+    }
+  
+    .fa-times {
+      color: #fff;
+      font-size: 1.5rem;
+    }
+  
+    .nav-links-mobile {
+      display: block;
+      text-align: center;
+      margin: 0.8em auto;
+      border-radius: 4px;
+      width: 80%;
+      text-decoration: none;
+      font-size: 2rem;
+      background-color: transparent;
+      color: #fff;
+      padding: 14px 20px;
+      border: 1px solid #fff;
+      transition: all 0.3s ease-out;
+      font-weight: 600;
+      font-size: 2.5em;
+    }
+  
+    .nav-links-mobile:hover {
+      background: #fc3965;
+      color: #fff;
+      transition: 250ms;
+    }
+  }
